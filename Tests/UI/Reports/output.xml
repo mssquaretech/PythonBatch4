@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.2 on win32)" generated="20210512 20:22:38.807" rpa="false" schemaversion="2">
+<suite id="s1" name="AmazonFF" source="C:\Users\saurajad\PycharmProjects\RobotFrameworkBatch4\Tests\UI\AmazonFF.robot">
+<test id="s1-t1" name="Automating Amazon Website">
+<kw name="Given User navigates to Amazon.in" library="AmazonSD">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210512 20:22:39.034" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in'.</msg>
+<status status="PASS" starttime="20210512 20:22:39.034" endtime="20210512 20:22:43.452"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210512 20:22:43.452" endtime="20210512 20:22:43.585"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:39.033" endtime="20210512 20:22:43.586"/>
+</kw>
+<kw name="When User selects Toys from DropDown" library="AmazonSD">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${ListXpath}</arg>
+<arg>${DDValue}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210512 20:22:43.587" level="INFO">Selecting options from selection list '//select[@name='url']' by value search-alias=toys.</msg>
+<status status="PASS" starttime="20210512 20:22:43.587" endtime="20210512 20:22:43.954"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:43.586" endtime="20210512 20:22:43.954"/>
+</kw>
+<kw name="And Search for Cars" library="AmazonSD">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TextBoxXpath}</arg>
+<arg>${ToyValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210512 20:22:43.955" level="INFO">Typing text 'Cars' into text field '//input[@type='text']'.</msg>
+<status status="PASS" starttime="20210512 20:22:43.955" endtime="20210512 20:22:44.033"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:43.954" endtime="20210512 20:22:44.033"/>
+</kw>
+<kw name="And Click on Search button" library="AmazonSD">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${SearchBtnXpath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210512 20:22:44.034" level="INFO">Clicking button '//input[@type='submit' and @value='Go']'.</msg>
+<status status="PASS" starttime="20210512 20:22:44.034" endtime="20210512 20:22:45.952"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:44.034" endtime="20210512 20:22:45.952"/>
+</kw>
+<kw name="Then List of Cars Appears" library="AmazonSD">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210512 20:22:46.276" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210512 20:22:45.954" endtime="20210512 20:22:46.276"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:45.954" endtime="20210512 20:22:46.276"/>
+</kw>
+<status status="PASS" starttime="20210512 20:22:39.033" endtime="20210512 20:22:46.277"/>
+</test>
+<status status="PASS" starttime="20210512 20:22:38.809" endtime="20210512 20:22:46.278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AmazonFF">AmazonFF</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210512 20:22:38.837" level="ERROR">Error in file 'C:\Users\saurajad\PycharmProjects\RobotFrameworkBatch4\Tests\UI\AmazonFF.robot' on line 2: Importing library 'SeleniumLibray' failed: ModuleNotFoundError: No module named 'SeleniumLibray'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\saurajad\PycharmProjects\pythonProject\venv\Scripts\robot.exe
+  C:\Users\saurajad\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\saurajad\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\saurajad\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\saurajad\AppData\Local\Programs\Python\Python39
+  c:\users\saurajad\pycharmprojects\pythonproject\venv
+  c:\users\saurajad\pycharmprojects\pythonproject\venv\lib\site-packages</msg>
+</errors>
+</robot>
