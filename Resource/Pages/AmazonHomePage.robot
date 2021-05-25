@@ -1,5 +1,4 @@
 *** Variables ***
-${CategoryDDXpath}              //select[@name='url']
-${SearchTxtboxXpath}            //input[@id='twotabsearchtextbox']
-
-
+${CategoryDDPath}               //select[@name='url']
+${SearchTxtboxXpath}           //input[@id='twotabsearchtextbox']
+${SearchButton}                //input[@type='submit']
